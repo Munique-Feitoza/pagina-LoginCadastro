@@ -1,1 +1,228 @@
-h
+* { 
+   margin: 0; 
+ }
+ 
+ @charset "UTF-8";
+* {
+  font-family: "Roboto", sans-serif;
+}
+  
+ html { 
+   scroll-behavior: smooth; 
+ } 
+  
+ body { 
+   background-color: black;
+   color: black;
+ }
+ 
+ /*
+ Início do botão de troca Login e Cadastro
+ */
+   
+ .text-box {
+  margin-left: 23vw;
+  margin-top: 5vh;
+}
+
+.btn {
+  margin-top: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 30%);
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 30%);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 30%);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 50%;
+  width: 50%;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  -webkit-animation: moveInBottom 5s ease-out;
+          animation: moveInBottom 5s ease-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/*
+Fim do botão de troca de Login e Cadastro
+*/
+
+/*
+Configuração das div
+*/
+  
+#login {
+   background-color: white;
+   margin: 5px 50px; 
+   padding: 80px 40px 40px 40px;
+   border-radius: 50px;
+   box-shadow: 3px 3px 40px rgb(139,201,45),
+         -3px -3px 40px rgb(139,201,45);
+}
+ 
+#cadastro {
+   background-color: white;
+   margin: 5px 50px; 
+   padding: 80px 40px 40px 40px;
+   display: none;
+   border-radius: 50px;
+   box-shadow: 3px 3px 40px rgb(45,139,201),
+          -3px -3px 40px rgb(45,139,201);
+ }
+ 
+/*
+Configuração das div
+*/
+
+/*
+Arrumando o conteúdo
+*/
+
+input {
+  margin-left: 3vw;
+  border-radius: 50px;
+  height: 20px;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 30%);
+  text-align: center;
+}
+
+#don {
+  background-color: white;
+  width: 47vw;
+}
+
+#extra {
+  text-align: center;
+}
+
+i {
+  padding: 6% 8% 2% 8%;
+}
+
+/*
+Organizando botão
+*/
+.submit {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 7px 15px;
+  margin-top: 8px;
+  color: black;
+  border-radius: 50px;
+}
+.submitL, .submitL:before {
+  color: black;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(139,201,45,50%),
+         -2px -2px 10px rgba(139,201,45,50%);
+}
+.submitL:hover, .submitL:after {
+  color: white;
+  background-color: rgba(139,201,45,90%);
+  box-shadow: none;
+}
+.submitC, .submitC:before {
+  color: black;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(45,139,201,50%),
+          -2px -2px 10px rgba(45,139,201,50%);
+}
+.submitC:hover, .submitC:after {
+  color: white;
+  background-color: rgba(45,139,201,90%);
+  box-shadow: none;
+}
+
+/*
+Organizando botão
+*/
+  
+/*
+Arrumando o conteúdo
+*/
+
+ footer { 
+   position: fixed;
+   bottom: 0px;
+   right: 0px;
+   left: 0px;
+   padding: 5px; 
+   
+}
+ #texto1 { 
+   color: white;
+   font-size: 9px;
+   padding: 1% 0 0 3%; 
+ } 
+ #texto2 { 
+   color: white;
+   font-size: 9px;
+   padding: 0 0 1% 70%; 
+ }
