@@ -9,7 +9,7 @@ btnLC.addEventListener('click', function() {
     btnLC.innerText = "Login";
     document.querySelector('.btn-LoginCadastro').style.marginLeft = "11vw";
     return;
-  } else {
+  } else if (formC.style.display != 'block'){
   formL.style.display = 'none';
   formC.style.display ='block';
   btnLC.innerText = "Cadastro";

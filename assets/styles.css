@@ -112,6 +112,7 @@ Configuração das div
 */
   
 #login {
+   display: none;
    background-color: white;
    margin: 5px 50px; 
    padding: 80px 40px 40px 40px;
