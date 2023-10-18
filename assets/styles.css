@@ -277,9 +277,9 @@ Arrumando o conteúdo
     background-color: rgb(45,139,201);
   }
   #login {
-    box-shadow: 0 0 80px 15px rgb(139,201,45);
+    box-shadow: 0 0 80px 14px rgb(139,201,45);
   }
   #cadastro {
-    box-shadow: 0 0 80px 15px rgb(45,139,201);
+    box-shadow: 0 0 80px 14px rgb(45,139,201);
   }
 }
