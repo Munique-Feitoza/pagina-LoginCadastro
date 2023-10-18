@@ -4,7 +4,7 @@
 }
   
  html { 
-   scroll-behavior: smooth; 
+   scroll-behavior: smooth;
  } 
   
  body { 
@@ -17,7 +17,7 @@
  */
    
  .text-box {
-  margin-left: 23vw;
+  margin-left: 5.5rem;
   margin-top: 5vh;
 }
 
@@ -117,8 +117,7 @@ Configuração das div
    margin: 5px 50px; 
    padding: 80px 40px 40px 40px;
    border-radius: 50px;
-   box-shadow: 3px 3px 40px rgb(139,201,45),
-         -3px -3px 40px rgb(139,201,45);
+   box-shadow: 0 0 40px rgb(139,201,45);
 }
  
 #cadastro {
@@ -127,8 +126,7 @@ Configuração das div
    padding: 80px 40px 40px 40px;
    display: none;
    border-radius: 50px;
-   box-shadow: 3px 3px 40px rgb(45,139,201),
-          -3px -3px 40px rgb(45,139,201);
+   box-shadow: 0 0 40px rgb(45,139,201);
  }
  
 /*
@@ -177,8 +175,7 @@ Organizando botão
 .submitL, .submitL:before {
   color: black;
   background-color: white;
-  box-shadow: 2px 2px 10px rgba(139,201,45,50%),
-         -2px -2px 10px rgba(139,201,45,50%);
+  box-shadow: 0 0 10px 1px rgba(139,201,45,90%);
 }
 .submitL:hover, .submitL:after {
   color: white;
@@ -188,8 +185,7 @@ Organizando botão
 .submitC, .submitC:before {
   color: black;
   background-color: white;
-  box-shadow: 2px 2px 10px rgba(45,139,201,50%),
-          -2px -2px 10px rgba(45,139,201,50%);
+  box-shadow: 0 0 10px 1px rgba(45,139,201,90%);
 }
 .submitC:hover, .submitC:after {
   color: white;
@@ -214,12 +210,76 @@ Arrumando o conteúdo
    
 }
  #texto1 { 
-   color: white;
+   color: black;
    font-size: 9px;
    padding: 1% 0 0 3%; 
  } 
  #texto2 { 
-   color: white;
+   color: black;
    font-size: 9px;
    padding: 0 0 1% 70%; 
  }
+
+/* Configurar para computador */
+
+@media screen and (min-width: 769px) {
+  #texto1, #texto2 {
+    font-size: 12px;
+    color: black;
+  }
+  p, label {
+    font-size: 24px;
+  }
+  .submit {
+    font-size: 25px;
+  }
+  a {
+    width: 35%;
+    text-align: center;
+  }
+  i {
+    padding: 0;
+  }
+  .icone {
+    margin: 0 0 0 12rem;
+  }
+  .fa-brands {
+    width: 4.7rem;
+    padding: 30px 0;
+  }
+  .text-box {
+    margin-left: 9.5rem;
+  }
+  input {
+    margin-left: 9rem;
+    width: 460px;
+    height: 40px;
+  }
+  .submit {
+    padding: 14px 30px;
+    margin-left: 13rem;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+  main {
+   margin: 3rem;
+  }
+  .submitL, .submitL:before {
+    box-shadow: 0 0 30px 5px rgb(139,201,45);
+  }
+  .submitL:hover, .submitL:after {
+    background-color: rgb(139,201,45);
+  }
+  .submitC, .submitC:before {
+    box-shadow: 0 0 30px 5px rgb(45,139,201);
+  }
+  .submitC:hover, .submitC:after {
+    background-color: rgb(45,139,201);
+  }
+  #login {
+    box-shadow: 0 0 80px 15px rgb(139,201,45);
+  }
+  #cadastro {
+    box-shadow: 0 0 80px 15px rgb(45,139,201);
+  }
+}
